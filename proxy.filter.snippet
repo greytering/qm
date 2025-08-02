@@ -54,6 +54,8 @@ HOST-SUFFIX,books.apple.com,DIRECT
 HOST-SUFFIX,developer.apple.com,DIRECT
 HOST-SUFFIX,updates.cdn-apple.com,DIRECT
 
+HOST-SUFFIX,icloud-content.com,DIRECT
+
 # Apple 官方 IP 段直连
 IP-CIDR,17.0.0.0/8,DIRECT,no-resolve
 IP-CIDR,63.92.224.0/19,DIRECT,no-resolve
@@ -78,6 +80,8 @@ HOST-SUFFIX,telesco.pe,proxy
 HOST-SUFFIX,tg.dev,proxy
 HOST-SUFFIX,tg.me,proxy
 
+HOST-SUFFIX,telephony.goog,proxy
+HOST-SUFFIX,nicegram.cloud,proxy
 
 
 
@@ -86,5 +90,84 @@ IP-CIDR,91.108.0.0/16,proxy,no-resolve
 IP-CIDR,149.154.160.0/20,proxy,no-resolve
 
 
+
+
+
+# GitHub 相关域名走代理
+HOST-SUFFIX,github.com,proxy
+HOST-SUFFIX,githubusercontent.com,proxy
+HOST-SUFFIX,github.io,proxy
+
+# HOST-SUFFIX,gitlab.com,proxy  # 如果你也想代理 gitlab，可以加
+
+
+
+# GitHub 官方 IP 段走代理
+IP-CIDR,140.82.112.0/20,proxy,no-resolve
+IP-CIDR,140.82.0.0/16,proxy,no-resolve
+IP-CIDR,185.199.108.0/22,proxy,no-resolve
+IP-CIDR,192.30.252.0/22,proxy,no-resolve
+IP-CIDR,143.55.64.0/20,proxy,no-resolve
+# IP-CIDR,2606:50c0::/32,proxy,no-resolve  # IPv6 段，支持 IPv6 的可加
+
+
+
+
+
+# Instagram 相关域名走代理
+HOST-SUFFIX,instagram.com,proxy
+HOST-SUFFIX,cdninstagram.com,proxy
+HOST-SUFFIX,instagramcdn.com,proxy
+HOST-SUFFIX,cdninstagram.com,proxy
+HOST-SUFFIX,facebook.net,proxy
+HOST-SUFFIX,fbcdn.net,proxy
+HOST-SUFFIX,facebook.com,proxy
+HOST-SUFFIX,akamaihd.net,proxy
+
+# Instagram / Facebook IP 段走代理
+IP-CIDR,31.13.24.0/21,proxy,no-resolve
+IP-CIDR,31.13.64.0/18,proxy,no-resolve
+IP-CIDR,45.64.40.0/22,proxy,no-resolve
+IP-CIDR,66.220.144.0/20,proxy,no-resolve
+IP-CIDR,69.63.176.0/20,proxy,no-resolve
+IP-CIDR,69.171.224.0/19,proxy,no-resolve
+IP-CIDR,74.119.76.0/22,proxy,no-resolve
+IP-CIDR,103.4.96.0/22,proxy,no-resolve
+IP-CIDR,129.134.0.0/16,proxy,no-resolve
+IP-CIDR,157.240.0.0/16,proxy,no-resolve
+IP-CIDR,173.252.64.0/18,proxy,no-resolve
+IP-CIDR,204.15.20.0/22,proxy,no-resolve
+IP-CIDR,204.15.24.0/21,proxy,no-resolve
+
+
+
+
+# TikTok 相关域名走代理
+HOST-SUFFIX,tiktok.com,proxy
+HOST-SUFFIX,muscdn.com,proxy
+HOST-SUFFIX,musical.ly,proxy
+HOST-SUFFIX,pstatp.com,proxy
+HOST-SUFFIX,byteoversea.com,proxy
+HOST-SUFFIX,snssdk.com,proxy
+HOST-SUFFIX,ixigua.com,proxy
+HOST-SUFFIX,amemv.com,proxy
+HOST-SUFFIX,bytedance.com,proxy
+HOST-SUFFIX,tiktokcdn.com,proxy
+
+HOST-SUFFIX,tiktokv.us,proxy
+HOST-SUFFIX,tiktokcdn-us.com,proxy
+
+# TikTok / 字节跳动 IP 段走代理
+IP-CIDR,13.224.0.0/14,proxy,no-resolve
+IP-CIDR,52.220.0.0/14,proxy,no-resolve
+IP-CIDR,52.222.128.0/18,proxy,no-resolve
+IP-CIDR,52.48.0.0/14,proxy,no-resolve
+IP-CIDR,52.94.0.0/15,proxy,no-resolve
+IP-CIDR,52.119.192.0/18,proxy,no-resolve
+IP-CIDR,52.119.224.0/19,proxy,no-resolve
+IP-CIDR,52.119.128.0/19,proxy,no-resolve
+IP-CIDR,34.216.0.0/15,proxy,no-resolve
+IP-CIDR,34.224.0.0/12,proxy,no-resolve
+IP-CIDR,3.0.0.0/16,proxy,no-resolve
 
 
